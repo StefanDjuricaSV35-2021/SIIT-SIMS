@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cYPT8wWrnRFbDcz/joY2iBSpC6PL6Ymod69ED7EPbnz5+EffujnR7HDYKWZVyxK967zCp+cOBQL1S5VOmUJyhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Stefan\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Stefan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
