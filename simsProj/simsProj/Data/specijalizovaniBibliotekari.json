@@ -1,1 +1,14 @@
-﻿[]
+[
+  {
+    "naziv ogranka": "ogranak2",
+    "email": "spec@gmail.com",
+    "ime": "Specijalac",
+    "prezime": "Spec",
+    "jmbg": "321",
+    "telefon": "021111111",
+    "korisnicki nalog": {
+      "username": "spec",
+      "password": "specpass"
+    }
+  }
+]

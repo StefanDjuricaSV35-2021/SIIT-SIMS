@@ -7,15 +7,18 @@ using System.Threading.Tasks;
 
 namespace simsProj.Core.Korisnik
 {
-    
+    using Core.Clan;
+    using Core.ObicanBibliotekar;
+    using Core.SpecijalizovanBibliotekar;
     public class KorisnickiNalog
     {
+        
 
         [JsonProperty("username")]
-        private string username;
+        public string username;
 
         [JsonProperty("password")]
-        private string password;
+        public string password;
 
         public KorisnickiNalog() { }
 
@@ -24,5 +27,7 @@ namespace simsProj.Core.Korisnik
             this.username = username;
             this.password = password;
         }
+
+        
     }
 }

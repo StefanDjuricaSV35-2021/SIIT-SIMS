@@ -8,7 +8,7 @@ namespace simsProj.Core.ObicanBibliotekar
     public class ObicanBibliotekarRepository
     {
         public List<ObicanBibliotekar> ObicniBibliotekari { get; set; }
-        private string FilePath = "../../Data/obicniBibliotekari.json";
+        private string FilePath = "../../../Data/obicniBibliotekari.json";
 
         public ObicanBibliotekarRepository()
         {

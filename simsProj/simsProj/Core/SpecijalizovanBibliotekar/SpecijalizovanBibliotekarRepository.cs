@@ -7,7 +7,7 @@ namespace simsProj.Core.SpecijalizovanBibliotekar
     public class SpecijalizovanBibliotekarRepository
     {
         public List<SpecijalizovanBibliotekar> SpecijalizovaniBibliotekari { get; set; }
-        private string FilePath = "../../Data/specijalizovaniBibliotekari.json";
+        private string FilePath = "../../../Data/specijalizovaniBibliotekari.json";
 
         public SpecijalizovanBibliotekarRepository()
         {

@@ -6,22 +6,22 @@ namespace simsProj.Core.Korisnik
     public class Korisnik
     {
         [JsonProperty("email")]
-        private string email;
+        public string email;
 
         [JsonProperty("ime")]
-        private string ime;
+        public string ime;
 
         [JsonProperty("prezime")]
-        private string prezime;
+        public string prezime;
 
         [JsonProperty("jmbg")]
-        private string jmbg;
+        public string jmbg;
 
         [JsonProperty("telefon")]
-        private string telefon;
+        public string telefon;
 
         [JsonProperty("korisnicki nalog")]
-        private KorisnickiNalog nalog; 
+        public KorisnickiNalog nalog; 
 
         public Korisnik()
         {
