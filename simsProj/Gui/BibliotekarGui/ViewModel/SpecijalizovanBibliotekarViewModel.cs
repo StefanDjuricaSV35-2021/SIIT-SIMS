@@ -11,13 +11,13 @@ using System.Windows.Input;
 
 namespace simsProj.Gui.BibliotekarGui.ViewModel
 {
-    public class ObicanBibliotekarViewModel:BaseViewModel
+    public class SpecijalizovanBibliotekarViewModel:BaseViewModel
     {
         public ICommand RegistrujNoviNaslovIPrimerkeCommand { get; }
         public ICommand RegistrujNoviPrimerakCommand { get; }
 
 
-        public ObicanBibliotekarViewModel() {
+        public SpecijalizovanBibliotekarViewModel() {
 
             RegistrujNoviNaslovIPrimerkeCommand = new DelegateCommand(registrujNaslovIPrimerke);
             RegistrujNoviPrimerakCommand = new DelegateCommand(registrujNoviPrimerak);

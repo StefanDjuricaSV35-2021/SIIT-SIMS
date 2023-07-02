@@ -51,13 +51,13 @@ namespace simsProj.Gui.Login
                 {
                     MessageBox.Show("Ulogovan obican biblotekar!");
                     //napravi i prikazi prozor obicnog bibliotekara
-                    new ObicanBibliotekarWindow().Show();   
                     
                 }
                 else if (specijalizovanBibliotekar != null)
                 {
                     MessageBox.Show("Ulogovan spec biblotekar!");
                     //napravi i prikazi prozor spec bibliotekara
+                    new SpecijalizovanBibliotekarWindow().Show();
                 }
                 else
                 {

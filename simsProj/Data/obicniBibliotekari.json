@@ -10,17 +10,5 @@
       "username": "stefan123",
       "password": "igramyugioh"
     }
-  },
-  {
-    "naziv ogranka": "ogranak2",
-    "email": "tamara@gmail.com",
-    "ime": "tamara",
-    "prezime": "zubac",
-    "jmbg": "1234",
-    "telefon": "067777777",
-    "korisnicki nalog": {
-      "username": "tamara",
-      "password": "tamara"
-    }
   }
 ]
