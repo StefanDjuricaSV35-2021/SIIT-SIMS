@@ -31,5 +31,27 @@
     "slobodna": false,
     "izdavac": "SomePublisher",
     "nazivOgranka": "SomeBranchName"
+  },
+  {
+    "isbn": "123",
+    "godina": 2021,
+    "tipKoricenja": 0,
+    "format": "A4",
+    "udk": "ABC123",
+    "nabavnaCena": 50,
+    "slobodna": false,
+    "izdavac": "Izdavac A",
+    "nazivOgranka": "Ogranak A"
+  },
+  {
+    "isbn": "124",
+    "godina": 2022,
+    "tipKoricenja": 1,
+    "format": "A5",
+    "udk": "XYZ789",
+    "nabavnaCena": 70,
+    "slobodna": false,
+    "izdavac": "Izdavac B",
+    "nazivOgranka": "Ogranak B"
   }
 ]

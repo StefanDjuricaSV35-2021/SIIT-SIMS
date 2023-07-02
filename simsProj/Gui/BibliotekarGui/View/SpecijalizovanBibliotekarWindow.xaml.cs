@@ -16,13 +16,13 @@ using System.Windows.Shapes;
 namespace simsProj.Gui.Bibliotekar
 {
     /// <summary>
-    /// Interaction logic for ObicanBibliotekarWindow.xaml
+    /// Interaction logic for SpecijalizovanBibliotekarWindow.xaml
     /// </summary>
     /// 
-    public partial class ObicanBibliotekarWindow : Window
+    public partial class SpecijalizovanBibliotekarWindow : Window
     {
-        public ObicanBibliotekarViewModel ViewModel = new ObicanBibliotekarViewModel();
-        public ObicanBibliotekarWindow()
+        public SpecijalizovanBibliotekarViewModel ViewModel = new SpecijalizovanBibliotekarViewModel();
+        public SpecijalizovanBibliotekarWindow()
         {
             InitializeComponent();
             DataContext = ViewModel;

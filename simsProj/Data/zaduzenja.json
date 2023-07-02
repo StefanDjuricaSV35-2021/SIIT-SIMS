@@ -6,5 +6,21 @@
     "datum kraja": "2023-07-04T16:04:08.7926228+02:00",
     "stanje knjige": 1,
     "stanje zaduzenja": 0
+  },
+  {
+  "isbn": "123",
+    "jmbg": "123456",
+    "datum pocetka": "2023-06-20T00:00:00",
+    "datum kraja": "2023-06-25T00:00:00",
+    "stanje knjige": 1,
+    "stanje zaduzenja": 0
+  },
+  {
+    "isbn": "124",
+    "jmbg": "123456",
+    "datum pocetka": "2023-07-01T00:00:00",
+    "datum kraja": "2023-07-15T00:00:00",
+    "stanje knjige": 0,
+    "stanje zaduzenja": 0
   }
 ]

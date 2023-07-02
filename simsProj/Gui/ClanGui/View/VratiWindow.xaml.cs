@@ -1,4 +1,4 @@
-
+﻿using simsProj.Gui.ClanGui.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,20 +12,20 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using simsProj.Core.Clan;
-using simsProj.Gui.ClanGui.ViewModel;
 
 namespace simsProj.Gui.ClanGui.View
 {
     /// <summary>
-    /// Interaction logic for ClanWindow.xaml
+    /// Interaction logic for VratiWindow.xaml
     /// </summary>
-    public partial class ClanWindow : Window
+    public partial class VratiWindow : Window
     {
-        public ClanWindow(Clan LoginClan)
+        public VratiViewModel viewModel { get; set; }
+        public VratiWindow()
         {
             InitializeComponent();
-            DataContext = new ClanViewModel(LoginClan);
+            viewModel = new VratiViewModel();
+            DataContext = viewModel;
         }
     }
 }

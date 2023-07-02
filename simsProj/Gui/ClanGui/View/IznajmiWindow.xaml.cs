@@ -1,5 +1,4 @@
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,20 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using simsProj.Core.Clan;
-using simsProj.Gui.ClanGui.ViewModel;
 
 namespace simsProj.Gui.ClanGui.View
 {
     /// <summary>
-    /// Interaction logic for ClanWindow.xaml
+    /// Interaction logic for IznajmiWindow.xaml
     /// </summary>
-    public partial class ClanWindow : Window
+    public partial class IznajmiWindow : Window
     {
-        public ClanWindow(Clan LoginClan)
+        public IznajmiWindow()
         {
             InitializeComponent();
-            DataContext = new ClanViewModel(LoginClan);
         }
     }
 }

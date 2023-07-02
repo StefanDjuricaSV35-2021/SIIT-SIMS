@@ -14,6 +14,7 @@ namespace simsProj.Gui.Login
 {
     using Core.Login;
     using simsProj.Gui.Bibliotekar;
+    using simsProj.Gui.ClanGui.View;
 
     public class LoginCommand : BaseCommand
     {
@@ -47,17 +48,18 @@ namespace simsProj.Gui.Login
                 {
                     MessageBox.Show("Ulogovao se clan");
                     new ClanWindow(LoginClan).Show();
+
                 }
                 else if (obicanBibliotekar != null)
                 {
                     MessageBox.Show("Ulogovan obican biblotekar!");
                     new ObicanBibliotekarWindow().Show();   
-                    
                 }
                 else if (specijalizovanBibliotekar != null)
                 {
                     MessageBox.Show("Ulogovan spec biblotekar!");
                     //napravi i prikazi prozor spec bibliotekara
+                    new SpecijalizovanBibliotekarWindow().Show();
                 }
                 else
                 {

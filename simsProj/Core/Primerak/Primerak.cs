@@ -15,10 +15,10 @@ namespace simsProj.Core.Primerak
     public class Primerak
     {
         [JsonProperty("isbn")]
-        private string isbn;
+        public string isbn;
 
         [JsonProperty("godina")]
-        private int godina;
+        public int godina;
 
         [JsonProperty("tipKoricenja")]
         private TipKoricenja tipKoricenja;
@@ -33,7 +33,7 @@ namespace simsProj.Core.Primerak
         private int nabavnaCena;
 
         [JsonProperty("slobodna")]
-        private bool slobodna;
+        public bool slobodna;
 
         [JsonProperty("izdavac")]
         private string izdavac;
