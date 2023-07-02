@@ -7,7 +7,7 @@ namespace simsProj.Core.Naslov
     public class NaslovRepository
     {
         public List<Naslov> Naslovi { get; set; }
-        private string FilePath = "../../Data/naslovi.json";
+        private string FilePath = "../../../Data/naslovi.json";
 
         public NaslovRepository()
         {

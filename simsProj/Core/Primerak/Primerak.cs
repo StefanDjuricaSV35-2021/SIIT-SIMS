@@ -14,7 +14,7 @@ namespace simsProj.Core.Primerak
     public class Primerak
     {
         [JsonProperty("isbn")]
-        private string isbn;
+        public string isbn;
 
         [JsonProperty("godina")]
         private int godina;

@@ -20,7 +20,7 @@ namespace simsProj.Gui.RadSaFondomGui.View
     /// </summary>
     public partial class RegistrujNoviPrimerakView : Window
     {
-        public RegistrujNoviPrimerakViewModel ViewModel { get; set; }
+        public RegistrujNoviPrimerakViewModel ViewModel=new RegistrujNoviPrimerakViewModel();
         public RegistrujNoviPrimerakView()
         {
             InitializeComponent();

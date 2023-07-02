@@ -1,9 +1,15 @@
 ﻿using Prism.Commands;
+using simsProj.Core.Autor;
 using simsProj.Core.Fond;
+using simsProj.Core.Naslov;
+using simsProj.Core.Ogranak;
+using simsProj.Core.Primerak;
 using simsProj.Gui.RadSaFondomGui.View;
 using System;
 using System.Collections.Generic;
+using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -33,7 +39,7 @@ namespace simsProj.Gui.RadSaFondomGui.ViewModel
         private string opis;
         private string imeAutora;
         private string prezimeAutora;
-
+        private List<Autor> autori=new List<Autor>();
 
         public string ImeNaslova
         {
@@ -80,12 +86,30 @@ namespace simsProj.Gui.RadSaFondomGui.ViewModel
         }
 
         public void dodajAutora() {
-        
-                
+
+            if (ImeAutora != null && PrezimeAutora != null)
+            {
+                Autor a = new Autor(ImeAutora, PrezimeAutora);
+                autori.Add(a);
+                MessageBox.Show("Autor je uspesno dodat!");
+                ImeAutora = string.Empty;
+                PrezimeAutora = string.Empty;
+            }
+            else {
+                MessageBox.Show("Empty fields!");
+            }
         }
 
         public void registrujNaslov() {
-            FondService.registrujNaslov();
+            if (FondService.registrujNaslov(ImeNaslova, Opis, autori))
+            {
+                MessageBox.Show("Naslov je uspesno dodat!");
+                ImeNaslova = string.Empty;
+                Opis = string.Empty;
+                return;
+            }
+            autori = new List<Autor>();
+            MessageBox.Show("Naslov vec postoji u bazi!");
         }
     }
 }

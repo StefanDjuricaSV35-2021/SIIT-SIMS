@@ -11,7 +11,7 @@ namespace simsProj.Core.Naslov
     public class Naslov
     {
         [JsonProperty("naslov")]
-        private string naslov;
+        public string naslov;
 
         [JsonProperty("opis")]
         private string opis;
@@ -26,7 +26,7 @@ namespace simsProj.Core.Naslov
         private List<Autor.Autor> autori;
 
         [JsonProperty("primerci")]
-        private List<string> primerci;
+        public List<string> primerci;
 
         public Naslov()
         {

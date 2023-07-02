@@ -13,7 +13,7 @@ namespace simsProj.Core.Ogranak
         private Adresa adresa;
 
         [JsonProperty("naziv ogranka")]
-        private string nazivOgranka;
+        public string nazivOgranka;
 
         [JsonProperty("neradni Dani")]
         private List<DateTime> neradniDani;
