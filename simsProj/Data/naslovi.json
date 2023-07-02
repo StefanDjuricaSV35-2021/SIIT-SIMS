@@ -101,5 +101,24 @@
     "primerci": [
       "888"
     ]
+  },
+  {
+    "naslov": "Novi naslov",
+    "opis": "nema opisa",
+    "brCitanja": 0,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Ime3",
+        "prezime": "Prezime3"
+      },
+      {
+        "ime": "Ime4",
+        "prezime": "Prezime4"
+      }
+    ],
+    "primerci": [
+      "999"
+    ]
   }
 ]

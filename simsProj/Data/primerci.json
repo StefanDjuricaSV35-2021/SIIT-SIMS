@@ -86,5 +86,16 @@
     "slobodna": true,
     "izdavac": "Izdavac1",
     "nazivOgranka": "Ogranak4"
+  },
+  {
+    "isbn": "999",
+    "godina": 1998,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "1234",
+    "nabavnaCena": 750,
+    "slobodna": true,
+    "izdavac": "Nepoznat",
+    "nazivOgranka": "Ogranak2"
   }
 ]
