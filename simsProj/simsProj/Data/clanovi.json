@@ -1,1 +1,14 @@
-﻿[]
+[
+  {
+    "email": "emailclana",
+    "ime": "luka",
+    "prezime": "petkovic",
+    "jmbg": "12345",
+    "telefon": "021123",
+    "korisnicki nalog": {
+      "username": "lukap",
+      "password": "lukaa"
+    },
+    "broj clanske karte": "123"
+  }
+]

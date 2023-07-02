@@ -8,7 +8,7 @@ namespace simsProj.Core.Clan
     public class ClanRepository
     {
         public List<Clan> Clanovi { get; set; }
-        private string FilePath = "../../Data/clanovi.json";
+        private string FilePath = "../../../Data/clanovi.json";
 
         public ClanRepository()
         {
