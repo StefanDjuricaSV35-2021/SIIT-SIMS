@@ -13,6 +13,7 @@ using simsProj.Gui.ClanGui.View;
 namespace simsProj.Gui.Login
 {
     using Core.Login;
+    using Gui.BibliotekarGui.View;
     using simsProj.Gui.Bibliotekar;
     using simsProj.Gui.ClanGui.View;
 
@@ -53,6 +54,7 @@ namespace simsProj.Gui.Login
                 else if (obicanBibliotekar != null)
                 {
                     MessageBox.Show("Ulogovan obican biblotekar!");
+                    new ObicanBibliotekarWindow().Show();
 
                 }
                 else if (specijalizovanBibliotekar != null)
