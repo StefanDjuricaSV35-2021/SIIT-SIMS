@@ -1,1 +1,22 @@
-﻿[]
+﻿[
+  {
+    "naslov": "Naslov A",
+    "opis": "Opis naslova A",
+    "br citanja": 20,
+    "autori": [
+      {
+        "ime": "Autor1",
+        "prezime": "Prezime1"
+      },
+      {
+        "ime": "Autor2",
+        "prezime": "Prezime2"
+      }
+    ],
+    "primerci": [
+      "123",
+      "124"
+    ]
+  }
+  
+]

@@ -14,31 +14,31 @@ namespace simsProj.Core.Primerak
     public class Primerak
     {
         [JsonProperty("isbn")]
-        private string isbn;
+        public string isbn { get; set; }
 
         [JsonProperty("godina")]
-        private int godina;
+        public int godina { get; set; }
 
         [JsonProperty("tip koricenja")]
-        private TipKoricenja tipKoricenja;
+        public TipKoricenja tipKoricenja { get; set; }
 
         [JsonProperty("format")]
-        private string format;
+        public string format { get; set; }
 
         [JsonProperty("udk")]
-        private string udk;
+        public string udk { get; set; }
 
         [JsonProperty("nabavna cena")]
-        private int nabavnaCena;
+        public int nabavnaCena { get; set; }
 
         [JsonProperty("slobodna")]
-        private bool slobodna;
+        public bool slobodna { get; set; }
 
         [JsonProperty("Izdavac")]
-        private string Izdavac;
+        public string Izdavac { get; set; }
 
         [JsonProperty("naziv ogranka")]
-        private string nazivOgranka;
+        public  string nazivOgranka { get; set; }
 
         public Primerak()
         {

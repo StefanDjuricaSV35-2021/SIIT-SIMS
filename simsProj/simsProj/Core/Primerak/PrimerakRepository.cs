@@ -8,7 +8,7 @@ namespace simsProj.Core.Primerak
     public class PrimerakRepository
     {
         public List<Primerak> Primerci { get; set; }
-        private string FilePath = "../../Data/primerci.json";
+        private string FilePath = "../../../Data/primerci.json";
 
         public PrimerakRepository()
         {

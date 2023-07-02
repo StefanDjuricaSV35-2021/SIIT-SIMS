@@ -12,6 +12,8 @@ using System.Windows;
 namespace simsProj.Gui.Login
 {
     using Core.Login;
+    using simsProj.Gui.ClanGui.View;
+
     public class LoginCommand : BaseCommand
     {
         private LoginViewModel _loginViewModel;
@@ -44,6 +46,7 @@ namespace simsProj.Gui.Login
                 {
                     MessageBox.Show("Ulogovao se clan");
                     //napravi i prikazi prozor clana
+                    new ClanWindow().Show();
                 }
                 else if (obicanBibliotekar != null)
                 {

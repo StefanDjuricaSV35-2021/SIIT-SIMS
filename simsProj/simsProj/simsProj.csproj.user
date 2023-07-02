@@ -7,6 +7,26 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Gui\ClanGui\View\ClanWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Gui\ClanGui\View\IznajmiWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Gui\ClanGui\View\VratiWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Gui\ClanGui\View\ClanWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Gui\ClanGui\View\IznajmiWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Gui\ClanGui\View\VratiWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
