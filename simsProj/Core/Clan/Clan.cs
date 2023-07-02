@@ -1,5 +1,6 @@
 ﻿using simsProj.Core.Korisnik;
 using Newtonsoft.Json;
+using simsProj.Core.Clanska_Karta;
 
 namespace simsProj.Core.Clan
 {
@@ -35,5 +36,24 @@ namespace simsProj.Core.Clan
         {
             this.brClanskeKarte = null;
         }
+
+        public ClanskaKarta GetClanskaKarta()
+        {
+            if (brClanskeKarte == null)
+            {
+                return null;
+            }
+
+            ClanskaKartaRepository ckr = new ClanskaKartaRepository();
+
+            foreach (ClanskaKarta clanskaKarta in ckr.GetClanskeKarte())
+            {
+                if (clanskaKarta.GetBrClanskeKarte() == brClanskeKarte)
+                {
+                    return clanskaKarta;
+                }
+            }
+            return null;
+        } 
     }
 }

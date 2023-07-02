@@ -1,0 +1,28 @@
+﻿<Window x:Class="simsProj.Gui.ZaduzenjeGui.View.ZaduzenjeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:simsProj.Gui.ZaduzenjeGui.View"
+        mc:Ignorable="d"
+        Title="ZaduzenjeWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="naslovDataGrid" AutoGenerateColumns="False"
+                  ItemsSource="{Binding naslovi}"
+                  SelectedItem="{Binding SelectedNaslov, Mode=TwoWay}"
+                  Margin="31,10,31,164">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Naslov" Binding="{Binding naslov}" Width="200" />
+                <DataGridTextColumn Header="Opis" Binding="{Binding opis}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Zaduzi Primerak" Command="{Binding Zaduzi}" HorizontalAlignment="Center" Height="37" VerticalAlignment="Top" Width="178" FontWeight="Bold" FontSize="16" Margin="0,363,0,0"/>
+
+
+        <Label Name="CurrentZaduzenjeNum" Content="{Binding currentZaduzenjeNum}" HorizontalAlignment="Left" Margin="528,309,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="241" Height="24" />
+        <Label Name="MaxZaduzenja" Content="{Binding maxZaduzenja}" HorizontalAlignment="Left" Margin="31,309,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="266" Height="24" />
+        <Label Content="Trenutan broj zaduzenih knjiga:" HorizontalAlignment="Left" Margin="528,275,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="241" Height="29" />
+        <Label Content="Maksimalan broj zaduzenih knjiga:" HorizontalAlignment="Left" Margin="31,275,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="266" Height="29" />
+    </Grid>
+</Window>

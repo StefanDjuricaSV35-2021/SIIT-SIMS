@@ -20,22 +20,22 @@ namespace simsProj.Core.Zaduzenje
     public class Zaduzenje
     {
         [JsonProperty("isbn")]
-        private string isbn;
+        public string isbn;
 
         [JsonProperty("jmbg")]
-        private string jmbg;
+        public string jmbg;
 
         [JsonProperty("datum pocetka")]
         private DateTime datumPocetka;
 
         [JsonProperty("datum kraja")]
-        private DateTime datumKraja;
+        public DateTime datumKraja;
 
         [JsonProperty("stanje knjige")]
         private StanjeKnjige stanjeKnjige;
 
         [JsonProperty("stanje zaduzenja")]
-        private StanjeZaduzenja stanjeZaduzenja;
+        public StanjeZaduzenja stanjeZaduzenja;
 
         public Zaduzenje()
         {
@@ -50,6 +50,21 @@ namespace simsProj.Core.Zaduzenje
             this.datumKraja = datumKraja;
             this.stanjeKnjige = stanjeKnjige;
             this.stanjeZaduzenja = stanjeZaduzenja;
+        }
+
+        public bool IsClans(Clan.Clan clan)
+        {
+            return jmbg == clan.jmbg;
+        }
+
+        public bool IsPrimerak(Primerak.Primerak primerak)
+        {
+            return isbn == primerak.GetIsbn();
+        }
+
+        public bool IsActive()
+        {
+            return stanjeZaduzenja != StanjeZaduzenja.ZAVRSENO;
         }
     }
 }

@@ -20,9 +20,23 @@ namespace simsProj.Core.Primerak
             Primerci = JsonConvert.DeserializeObject<List<Primerak>>(File.ReadAllText(FilePath));
         }
 
+
         public void Save()
         {
             File.WriteAllText(FilePath, JsonConvert.SerializeObject(Primerci, Formatting.Indented));
+        }
+
+        public void ZaduziPrimerak(Primerak Primerak)
+        {
+            foreach (Primerak primerak in Primerci)
+            {
+                if (Primerak.GetIsbn() == primerak.GetIsbn())
+                {
+                    primerak.SetSlobodna(false);
+                    Save();
+                    return;
+                }
+            }
         }
     }
 }

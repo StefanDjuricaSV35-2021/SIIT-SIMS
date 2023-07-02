@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using simsProj.Core.Zaduzenje;
 
 namespace simsProj.Core.Primerak
 {
@@ -17,7 +18,7 @@ namespace simsProj.Core.Primerak
         public string isbn;
 
         [JsonProperty("godina")]
-        private int godina;
+        public int godina;
 
         [JsonProperty("tipKoricenja")]
         private TipKoricenja tipKoricenja;
@@ -32,7 +33,7 @@ namespace simsProj.Core.Primerak
         private int nabavnaCena;
 
         [JsonProperty("slobodna")]
-        private bool slobodna;
+        public bool slobodna;
 
         [JsonProperty("izdavac")]
         private string izdavac;
@@ -56,6 +57,28 @@ namespace simsProj.Core.Primerak
             this.slobodna = slobodna;
             this.izdavac = izdavac;
             this.nazivOgranka = nazivOgranka;
+        }
+
+        public string GetIsbn()
+        {
+            return isbn;
+        }
+
+        public bool IsAvailable()
+        {
+            foreach (Zaduzenje.Zaduzenje zaduzenje in new ZaduzenjeRepository().Zaduzenja)
+            {
+                if (zaduzenje.IsPrimerak(this) && zaduzenje.IsActive())
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public void SetSlobodna(bool b)
+        {
+            slobodna = b;
         }
     }
 }

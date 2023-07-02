@@ -7,13 +7,16 @@ namespace simsProj.Core.Clanska_Karta
     public class ClanskaKartaRepository
     {
         public List<ClanskaKarta> ClanskeKarte { get; set; }
-        private string FilePath = "../../Data/clanskeKarte.json";
+        private string FilePath = "../../../Data/clanskeKarte.json";
 
         public ClanskaKartaRepository()
         {
             GetAllClanskeKarte();
         }
-
+        public List<ClanskaKarta> GetClanskeKarte()
+        {
+            return ClanskeKarte;
+        }
         public void GetAllClanskeKarte()
         {
             ClanskeKarte = JsonConvert.DeserializeObject<List<ClanskaKarta>>(File.ReadAllText(FilePath));
