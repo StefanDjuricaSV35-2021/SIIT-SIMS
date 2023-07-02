@@ -51,5 +51,20 @@ namespace simsProj.Core.Zaduzenje
             this.stanjeKnjige = stanjeKnjige;
             this.stanjeZaduzenja = stanjeZaduzenja;
         }
+
+        public bool IsClans(Clan.Clan clan)
+        {
+            return jmbg == clan.jmbg;
+        }
+
+        public bool IsPrimerak(Primerak.Primerak primerak)
+        {
+            return isbn == primerak.GetIsbn();
+        }
+
+        public bool IsActive()
+        {
+            return stanjeZaduzenja != StanjeZaduzenja.ZAVRSENO;
+        }
     }
 }

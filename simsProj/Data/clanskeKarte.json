@@ -1,18 +1,12 @@
 ﻿[
-  
     {
       "broj clanske karte": "123",
       "clanstvo": "DECA",
       "datum placanja": "2023-06-15T00:00:00",
-      "maxDana": 7,
-      "maxKnjiga": 3
     },
     {
       "broj clanske karte": "124",
       "clanstvo": "STUDENTI",
       "datum placanja": "2023-05-20T00:00:00",
-      "maxDana": 14,
-      "maxKnjiga": 5
     }
-  
 ]

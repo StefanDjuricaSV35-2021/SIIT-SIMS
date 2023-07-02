@@ -1,6 +1,14 @@
 [
   {
-    "isbn": "123",
+    "isbn": "111222333",
+    "jmbg": "12345",
+    "datum pocetka": "2023-07-02T16:04:08.7926191+02:00",
+    "datum kraja": "2023-07-04T16:04:08.7926228+02:00",
+    "stanje knjige": 1,
+    "stanje zaduzenja": 0
+  },
+  {
+  "isbn": "123",
     "jmbg": "123456",
     "datum pocetka": "2023-06-20T00:00:00",
     "datum kraja": "2023-06-25T00:00:00",

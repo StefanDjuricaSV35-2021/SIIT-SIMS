@@ -1,4 +1,9 @@
 ﻿using Prism.Commands;
+using simsProj.Gui.RadSaFondomGui.View;
+using simsProj.Core.Clan;
+using simsProj.Gui.ClanGui.Command;
+using simsProj.Gui.ZaduzenjeGui.View;
+
 using simsProj.Gui.ClanGui.View;
 using System;
 using System.Collections.Generic;
@@ -15,33 +20,25 @@ namespace simsProj.Gui.ClanGui.ViewModel
     public class ClanViewModel:INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public ICommand IznajmiCommand { get; set; }
+        public ICommand ZaduziPrimerak { get; set; }
         public ICommand VratiCommand { get; set; }
-
+        public Clan _Clan;
+        
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-        public ClanViewModel()
+        public ClanViewModel(Clan Clan)
         {
-           
-            IznajmiCommand = new DelegateCommand(Iznajmi);
+            _Clan = Clan;
+            ZaduziPrimerak = new ClanZaduzenjeWindowCommand(this);
             VratiCommand = new DelegateCommand(Vrati);
             
-        }
-
-        public void Iznajmi()
-        {
-            new IznajmiWindow().Show();
         }
 
         public void Vrati()
         {
             new VratiWindow().Show();
         }
-
-
-
-
     }
 }

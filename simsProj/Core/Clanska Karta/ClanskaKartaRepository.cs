@@ -13,7 +13,10 @@ namespace simsProj.Core.Clanska_Karta
         {
             GetAllClanskeKarte();
         }
-
+        public List<ClanskaKarta> GetClanskeKarte()
+        {
+            return ClanskeKarte;
+        }
         public void GetAllClanskeKarte()
         {
             ClanskeKarte = JsonConvert.DeserializeObject<List<ClanskaKarta>>(File.ReadAllText(FilePath));

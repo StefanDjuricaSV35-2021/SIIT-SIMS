@@ -15,6 +15,7 @@ namespace simsProj.Core.Zaduzenje
             GetAllZaduzenja();
         }
 
+        public List<Zaduzenje> GetZaduzenja() { return Zaduzenja;}
         public void GetAllZaduzenja()
         {
             Zaduzenja = JsonConvert.DeserializeObject<List<Zaduzenje>>(File.ReadAllText(FilePath));
@@ -23,6 +24,12 @@ namespace simsProj.Core.Zaduzenje
         public void Save()
         {
             File.WriteAllText(FilePath, JsonConvert.SerializeObject(Zaduzenja, Formatting.Indented));
+        }
+
+        public void Add(Zaduzenje zaduzenje)
+        {
+            Zaduzenja.Add(zaduzenje);
+            Save();
         }
     }
 }

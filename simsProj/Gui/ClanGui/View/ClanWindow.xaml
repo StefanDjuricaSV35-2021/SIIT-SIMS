@@ -6,9 +6,8 @@
         xmlns:local="clr-namespace:simsProj.Gui.ClanGui.View"
         mc:Ignorable="d"
         Title="ClanWindow" Height="450" Width="800">
-    <Grid Background="#FFE5E5E5">
-        <Button Content="Iznajmi knjige" HorizontalAlignment="Left" Margin="254,75,0,0" VerticalAlignment="Top" Height="50" Width="284"  FontFamily="Lucida Calligraphy" FontSize="14" Background="White" Command="{Binding IznajmiCommand}"/>
+    <Grid>
+        <Button Content="Zaduzi Primerak" Command="{Binding ZaduziPrimerak}" HorizontalAlignment="Center" Height="37" VerticalAlignment="Center" Width="178" FontWeight="Bold" FontSize="16"/>
         <Button Content="Vrati knjige" HorizontalAlignment="Left" Margin="254,188,0,0" VerticalAlignment="Top" Height="50" Width="284"  FontFamily="Lucida Calligraphy" FontSize="14" Background="White" Command="{Binding VratiCommand}"/>
-
     </Grid>
 </Window>

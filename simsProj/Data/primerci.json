@@ -1,5 +1,38 @@
 [
   {
+    "isbn": "111222333",
+    "godina": 2023,
+    "tipKoricenja": 0,
+    "format": "SomeFormat",
+    "udk": "SomeUdk",
+    "nabavnaCena": 100,
+    "slobodna": false,
+    "izdavac": "SomePublisher",
+    "nazivOgranka": "SomeBranchName"
+  },
+  {
+    "isbn": "987654321",
+    "godina": 2023,
+    "tipKoricenja": 0,
+    "format": "SomeFormat",
+    "udk": "SomeUdk",
+    "nabavnaCena": 100,
+    "slobodna": false,
+    "izdavac": "SomePublisher",
+    "nazivOgranka": "SomeBranchName"
+  },
+  {
+    "isbn": "456123789",
+    "godina": 2023,
+    "tipKoricenja": 0,
+    "format": "SomeFormat",
+    "udk": "SomeUdk",
+    "nabavnaCena": 100,
+    "slobodna": false,
+    "izdavac": "SomePublisher",
+    "nazivOgranka": "SomeBranchName"
+  },
+  {
     "isbn": "123",
     "godina": 2021,
     "tipKoricenja": 0,

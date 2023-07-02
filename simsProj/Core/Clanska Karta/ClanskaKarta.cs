@@ -18,10 +18,6 @@ namespace simsProj.Core.Clanska_Karta
         [JsonProperty("datum placanja")]
         private DateTime datumPlacanja;
 
-        private int maxDana;
-
-        private int maxKnjiga;
-
         public ClanskaKarta(){}
 
         public ClanskaKarta(string brClanskeKarte, TipClanstva clanstvo, DateTime datumPlacanja)
@@ -29,8 +25,11 @@ namespace simsProj.Core.Clanska_Karta
             this.brClanskeKarte = brClanskeKarte;
             this.clanstvo = clanstvo;
             this.datumPlacanja = datumPlacanja;
-            maxDana = getMaxDana();
-            maxKnjiga = getMaxKnjiga();
+        }
+
+        public string GetBrClanskeKarte()
+        {
+            return brClanskeKarte;
         }
 
         public int getMaxDana()
