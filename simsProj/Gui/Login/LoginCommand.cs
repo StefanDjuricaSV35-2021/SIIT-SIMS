@@ -53,7 +53,7 @@ namespace simsProj.Gui.Login
                 else if (obicanBibliotekar != null)
                 {
                     MessageBox.Show("Ulogovan obican biblotekar!");
-                    new ObicanBibliotekarWindow().Show();   
+
                 }
                 else if (specijalizovanBibliotekar != null)
                 {
