@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using simsProj.Gui.ClanGui.View;
 
 namespace simsProj.Gui.Login
 {
@@ -45,12 +46,11 @@ namespace simsProj.Gui.Login
                 else if (LoginClan != null)
                 {
                     MessageBox.Show("Ulogovao se clan");
-                    //napravi i prikazi prozor clana
+                    new ClanWindow(LoginClan).Show();
                 }
                 else if (obicanBibliotekar != null)
                 {
                     MessageBox.Show("Ulogovan obican biblotekar!");
-                    //napravi i prikazi prozor obicnog bibliotekara
                     new ObicanBibliotekarWindow().Show();   
                     
                 }
