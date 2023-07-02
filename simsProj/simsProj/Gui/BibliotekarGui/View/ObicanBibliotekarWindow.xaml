@@ -1,0 +1,20 @@
+﻿<Window x:Class="simsProj.Gui.Bibliotekar.ObicanBibliotekarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:simsProj.Gui.Bibliotekar"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid Background="#FFE5E5E5">
+        <Label Content="Obican bibliotekar" HorizontalAlignment="Left" Margin="310,34,0,0" VerticalAlignment="Top" Width="175" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Rad sa fondom : " HorizontalAlignment="Left" Margin="515,97,0,0" VerticalAlignment="Top" Width="125" FontSize="14" FontStyle="Italic" FontWeight="Bold"/>
+        <Button Content="Registruj novi naslov&#xD;&#xA;i nove primerke&#xD;&#xA;" Command="{Binding RegistrujNoviNaslovIPrimerkeCommand}" HorizontalAlignment="Left" Margin="515,150,0,0" VerticalAlignment="Top" Width="175" Height="50" FontSize="14"/>
+        <Button Content="Registruj novi primerak" HorizontalAlignment="Left" Margin="515,215,0,0" Command="{Binding RegistrujNoviPrimerakCommand}" VerticalAlignment="Top" Width="175" Height="37" FontSize="14"/>
+        <Label Content="Rad sa clanovima : " HorizontalAlignment="Left" Margin="135,103,0,0" VerticalAlignment="Top" Width="155" FontSize="14" FontStyle="Italic" FontWeight="Bold"/>
+        <Button Content="Zaduzenje primerka" HorizontalAlignment="Left" Margin="135,224,0,0" VerticalAlignment="Top" Width="165" Height="30" FontSize="14"/>
+        <Button Content="Vracanje primerka" HorizontalAlignment="Left" Margin="135,287,0,0" VerticalAlignment="Top" Width="165" Height="37" FontSize="14"/>
+        <Button Content="Registracija novog clana" HorizontalAlignment="Left" Margin="135,157,0,0" VerticalAlignment="Top" Width="165" Height="37" FontSize="14"/>
+
+    </Grid>
+</Window>
