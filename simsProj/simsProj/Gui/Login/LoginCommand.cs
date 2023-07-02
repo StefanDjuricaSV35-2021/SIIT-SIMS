@@ -12,6 +12,8 @@ using System.Windows;
 namespace simsProj.Gui.Login
 {
     using Core.Login;
+    using simsProj.Gui.Bibliotekar;
+
     public class LoginCommand : BaseCommand
     {
         private LoginViewModel _loginViewModel;
@@ -49,6 +51,8 @@ namespace simsProj.Gui.Login
                 {
                     MessageBox.Show("Ulogovan obican biblotekar!");
                     //napravi i prikazi prozor obicnog bibliotekara
+                    new ObicanBibliotekarWindow().Show();   
+                    
                 }
                 else if (specijalizovanBibliotekar != null)
                 {

@@ -19,7 +19,7 @@ namespace simsProj.Core.Primerak
         [JsonProperty("godina")]
         private int godina;
 
-        [JsonProperty("tip koricenja")]
+        [JsonProperty("tipKoricenja")]
         private TipKoricenja tipKoricenja;
 
         [JsonProperty("format")]
@@ -28,16 +28,16 @@ namespace simsProj.Core.Primerak
         [JsonProperty("udk")]
         private string udk;
 
-        [JsonProperty("nabavna cena")]
+        [JsonProperty("nabavnaCena")]
         private int nabavnaCena;
 
         [JsonProperty("slobodna")]
         private bool slobodna;
 
-        [JsonProperty("Izdavac")]
-        private string Izdavac;
+        [JsonProperty("izdavac")]
+        private string izdavac;
 
-        [JsonProperty("naziv ogranka")]
+        [JsonProperty("nazivOgranka")]
         private string nazivOgranka;
 
         public Primerak()
@@ -54,7 +54,7 @@ namespace simsProj.Core.Primerak
             this.udk = udk;
             this.nabavnaCena = nabavnaCena;
             this.slobodna = slobodna;
-            Izdavac = izdavac;
+            this.izdavac = izdavac;
             this.nazivOgranka = nazivOgranka;
         }
     }

@@ -16,10 +16,10 @@ namespace simsProj.Core.Naslov
         [JsonProperty("opis")]
         private string opis;
 
-        [JsonProperty("br citanja")]
+        [JsonProperty("brCitanja")]
         private int brCitanja;
 
-        [JsonProperty("lista cekanja")] 
+        [JsonProperty("listaCekanja")] 
         private List<Clan.Clan> listaCekanja;
 
         [JsonProperty("autori")]

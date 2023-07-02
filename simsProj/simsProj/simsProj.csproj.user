@@ -7,6 +7,26 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Gui\BibliotekarGui\View\ObicanBibliotekarWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Gui\RadSaFondomGui\View\RegistrujNoviNaslovIPrimerkeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Gui\RadSaFondomGui\View\RegistrujNoviPrimerakView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Gui\BibliotekarGui\View\ObicanBibliotekarWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Gui\RadSaFondomGui\View\RegistrujNoviNaslovIPrimerkeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Gui\RadSaFondomGui\View\RegistrujNoviPrimerakView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

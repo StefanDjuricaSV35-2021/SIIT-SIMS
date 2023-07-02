@@ -1,1 +1,104 @@
-﻿[]
+﻿[
+  {
+    "naslov": "Naslov 1",
+    "opis": "Opis 1",
+    "brCitanja": 3,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Autor 1",
+        "prezime": "Prezime 1"
+      },
+      {
+        "ime": "Autor 2",
+        "prezime": "Prezime 2"
+      }
+    ],
+    "primerci": [
+      {
+        "isbn": "123456789",
+        "godina": 2021,
+        "tipKoricenja": "MEKO",
+        "format": "PDF",
+        "udk": "123.45",
+        "nabavnaCena": 1000,
+        "slobodna": true,
+        "izdavac": "Izdavac 1",
+        "nazivOgranka": "Ogranak 1"
+      },
+      {
+        "isbn": "987654321",
+        "godina": 2022,
+        "tipKoricenja": "TVRDO",
+        "format": "Tiskano",
+        "udk": "543.21",
+        "nabavnaCena": 1500,
+        "slobodna": true,
+        "izdavac": "Izdavac 2",
+        "nazivOgranka": "Ogranak 2"
+      },
+      {
+        "isbn": "456123789",
+        "godina": 2020,
+        "tipKoricenja": "TVRDO",
+        "format": "Tiskano",
+        "udk": "987.65",
+        "nabavnaCena": 1200,
+        "slobodna": true,
+        "izdavac": "Izdavac 3",
+        "nazivOgranka": "Ogranak 3"
+      }
+    ]
+  },
+  {
+    "naslov": "Naslov 2",
+    "opis": "Opis 2",
+    "brCitanja": 3,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Autor 3",
+        "prezime": "Prezime 3"
+      },
+      {
+        "ime": "Autor 4",
+        "prezime": "Prezime 4"
+      }
+    ],
+    "primerci": [
+      {
+        "isbn": "111222333",
+        "godina": 2019,
+        "tipKoricenja": "MEKO",
+        "format": "EPUB",
+        "udk": "111.22",
+        "nabavnaCena": 800,
+        "slobodna": true,
+        "izdavac": "Izdavac 4",
+        "nazivOgranka": "Ogranak 4"
+      },
+      {
+        "isbn": "444555666",
+        "godina": 2023,
+        "tipKoricenja": "TVRDO",
+        "format": "Tiskano",
+        "udk": "444.55",
+        "nabavnaCena": 2000,
+        "slobodna": true,
+        "izdavac": "Izdavac 5",
+        "nazivOgranka": "Ogranak 5"
+      },
+      {
+        "isbn": "777888999",
+        "godina": 2022,
+        "tipKoricenja": "TVRDO",
+        "format": "Tiskano",
+        "udk": "777.88",
+        "nabavnaCena": 1800,
+        "slobodna": true,
+        "izdavac": "Izdavac 6",
+        "nazivOgranka": "Ogranak 6"
+      }
+    ]
+  }
+]
