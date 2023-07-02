@@ -10,10 +10,10 @@ namespace simsProj.Core.Clanska_Karta
     public class ClanskaKarta
     {
         [JsonProperty("broj clanske karte")]
-        private string brClanskeKarte;
+        public string brClanskeKarte;
 
         [JsonProperty("clanstvo")]
-        private TipClanstva clanstvo;
+        public TipClanstva clanstvo;
 
         [JsonProperty("datum placanja")]
         private DateTime datumPlacanja;

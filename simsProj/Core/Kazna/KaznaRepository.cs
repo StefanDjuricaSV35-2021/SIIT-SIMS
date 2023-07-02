@@ -7,7 +7,7 @@ namespace simsProj.Core.Kazna
     public class KaznaRepository
     {
         public List<Kazna> Kazne { get; set; }
-        private string FilePath = "../../Data/kazne.json";
+        private string FilePath = "../../../Data/kazne.json";
 
         public KaznaRepository()
         {
