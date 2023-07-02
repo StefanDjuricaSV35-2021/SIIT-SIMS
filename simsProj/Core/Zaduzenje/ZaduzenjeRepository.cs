@@ -8,7 +8,7 @@ namespace simsProj.Core.Zaduzenje
     public class ZaduzenjeRepository
     {
         public List<Zaduzenje> Zaduzenja { get; set; }
-        private string FilePath = "../../Data/zaduzenja.json";
+        private string FilePath = "../../../Data/zaduzenja.json";
 
         public ZaduzenjeRepository()
         {
