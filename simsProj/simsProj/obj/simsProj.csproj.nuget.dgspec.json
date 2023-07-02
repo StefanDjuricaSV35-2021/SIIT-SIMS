@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj": {}
+    "C:\\Users\\Stefan\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj": {
+    "C:\\Users\\Stefan\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj",
+        "projectUniqueName": "C:\\Users\\Stefan\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj",
         "projectName": "simsProj",
-        "projectPath": "C:\\Users\\USER\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj",
-        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\obj\\",
+        "projectPath": "C:\\Users\\Stefan\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\simsProj.csproj",
+        "packagesPath": "C:\\Users\\Stefan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Stefan\\Desktop\\SIIT-SIMS\\simsProj\\simsProj\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Stefan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

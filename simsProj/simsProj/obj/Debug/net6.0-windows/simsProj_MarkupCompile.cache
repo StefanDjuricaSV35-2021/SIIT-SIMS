@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\USER\Desktop\SIIT-SIMS\simsProj\simsProj\obj\Debug\net6.0-windows\
+C:\Users\Stefan\Desktop\SIIT-SIMS\simsProj\simsProj\obj\Debug\net6.0-windows\
 simsProj
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\USER\Desktop\SIIT-SIMS\simsProj\simsProj\App.xaml
+C:\Users\Stefan\Desktop\SIIT-SIMS\simsProj\simsProj\App.xaml
 41484371948
 
 43780821865
-1961896359156
+196-1846166125
 Gui\BibliotekarGui\View\ObicanBibliotekarWindow.xaml;Gui\RadSaFondomGui\View\RegistrujNoviNaslovIPrimerkeView.xaml;Gui\RadSaFondomGui\View\RegistrujNoviPrimerakView.xaml;MainWindow.xaml;
 
 False
