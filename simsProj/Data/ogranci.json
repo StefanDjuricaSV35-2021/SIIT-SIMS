@@ -1,1 +1,47 @@
-﻿[]
+﻿[
+  {
+    "adresa": {
+      "grad": "Grad1",
+      "ulica": "Ulica1",
+      "broj": "Broj1"
+    },
+    "naziv ogranka": "Ogranak1",
+    "neradni Dani": [ "2023-07-01", "2023-07-02", "2023-07-03" ]
+  },
+  {
+    "adresa": {
+      "grad": "Grad2",
+      "ulica": "Ulica2",
+      "broj": "Broj2"
+    },
+    "naziv ogranka": "Ogranak2",
+    "neradni Dani": [ "2023-07-04", "2023-07-05" ]
+  },
+  {
+    "adresa": {
+      "grad": "Grad3",
+      "ulica": "Ulica3",
+      "broj": "Broj3"
+    },
+    "naziv ogranka": "Ogranak3",
+    "neradni Dani": [ "2023-07-06" ]
+  },
+  {
+    "adresa": {
+      "grad": "Grad4",
+      "ulica": "Ulica4",
+      "broj": "Broj4"
+    },
+    "naziv ogranka": "Ogranak4",
+    "neradni Dani": [ "2023-07-07", "2023-07-08" ]
+  },
+  {
+    "adresa": {
+      "grad": "Grad5",
+      "ulica": "Ulica5",
+      "broj": "Broj5"
+    },
+    "naziv ogranka": "Ogranak5",
+    "neradni Dani": [ "2023-07-09" ]
+  }
+]

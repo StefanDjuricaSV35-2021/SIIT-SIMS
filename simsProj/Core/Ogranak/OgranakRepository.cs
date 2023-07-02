@@ -7,7 +7,7 @@ namespace simsProj.Core.Ogranak
     public class OgranakRepository
     {
         public List<Ogranak> Ogranci { get; set; }
-        private string FilePath = "../../Data/ogranci.json";
+        private string FilePath = "../../../Data/ogranci.json";
 
         public OgranakRepository()
         {

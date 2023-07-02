@@ -66,5 +66,40 @@
       "444555666",
       "777888999"
     ]
+  },
+  {
+    "naslov": "Dervis i smrt",
+    "opis": null,
+    "brCitanja": 0,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Mesa",
+        "prezime": "Selimovic"
+      }
+    ],
+    "primerci": [
+      "666",
+      "777"
+    ]
+  },
+  {
+    "naslov": "Kaludjer",
+    "opis": null,
+    "brCitanja": 0,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Ime1",
+        "prezime": "Prezime1"
+      },
+      {
+        "ime": "Ime2",
+        "prezime": "Prezime2"
+      }
+    ],
+    "primerci": [
+      "888"
+    ]
   }
 ]

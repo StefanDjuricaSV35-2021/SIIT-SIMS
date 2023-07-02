@@ -29,7 +29,7 @@ namespace simsProj.Gui.BibliotekarGui.ViewModel
 
         public void registrujNoviPrimerak() { 
         
-        new RegistrujNoviPrimerakView().Show();
+            new RegistrujNoviPrimerakView().Show();
         }
     }
 }

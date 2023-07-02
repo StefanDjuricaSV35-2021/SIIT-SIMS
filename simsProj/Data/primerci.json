@@ -53,5 +53,38 @@
     "slobodna": false,
     "izdavac": "Izdavac B",
     "nazivOgranka": "Ogranak B"
+  },
+  {
+    "isbn": "666",
+    "godina": 2000,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "123",
+    "nabavnaCena": 1300,
+    "slobodna": true,
+    "izdavac": "Klett",
+    "nazivOgranka": "Ogranak1"
+  },
+  {
+    "isbn": "777",
+    "godina": 2001,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "1234",
+    "nabavnaCena": 900,
+    "slobodna": true,
+    "izdavac": "Zavod",
+    "nazivOgranka": "Ogranak4"
+  },
+  {
+    "isbn": "888",
+    "godina": 1997,
+    "tipKoricenja": 0,
+    "format": "standardan",
+    "udk": "12345",
+    "nabavnaCena": 600,
+    "slobodna": true,
+    "izdavac": "Izdavac1",
+    "nazivOgranka": "Ogranak4"
   }
 ]
