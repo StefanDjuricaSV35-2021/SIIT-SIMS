@@ -65,5 +65,21 @@
       }
     ],
     "primerci": []
+  },
+  {
+    "naslov": "Na Drini Cuprija",
+    "opis": "U svom vekovnom postojanju most je pretrpeo mnogo toga. Prvo zabeleženo oštećenje mosta bilo je rušenje jednog svoda u srednjem veku.",
+    "brCitanja": 0,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Ivo",
+        "prezime": "Andric"
+      }
+    ],
+    "primerci": [
+      "1002",
+      "1003"
+    ]
   }
 ]

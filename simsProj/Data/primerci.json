@@ -86,5 +86,27 @@
     "slobodna": true,
     "izdavac": "w",
     "nazivOgranka": "Ogranak1"
+  },
+  {
+    "isbn": "1002",
+    "godina": 1998,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "2001",
+    "nabavnaCena": 850,
+    "slobodna": true,
+    "izdavac": "Zavod",
+    "nazivOgranka": "Ogranak5"
+  },
+  {
+    "isbn": "1003",
+    "godina": 2005,
+    "tipKoricenja": 0,
+    "format": "standardan",
+    "udk": "3001",
+    "nabavnaCena": 1200,
+    "slobodna": true,
+    "izdavac": "Klett",
+    "nazivOgranka": "Ogranak2"
   }
 ]
