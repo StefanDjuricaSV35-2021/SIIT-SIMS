@@ -34,40 +34,6 @@
     ]
   },
   {
-    "naslov": "Naslov 2",
-    "opis": "Opis 2",
-    "brCitanja": 3,
-    "listaCekanja": [
-      {
-        "email": "emailclana",
-        "ime": "luka",
-        "prezime": "petkovic",
-        "jmbg": "12345",
-        "telefon": "021123",
-        "korisnicki nalog": {
-          "username": "lukap",
-          "password": "lukaa"
-        },
-        "broj clanske karte": "123"
-      }
-    ],
-    "autori": [
-      {
-        "ime": "Autor 3",
-        "prezime": "Prezime 3"
-      },
-      {
-        "ime": "Autor 4",
-        "prezime": "Prezime 4"
-      }
-    ],
-    "primerci": [
-      "111222333",
-      "444555666",
-      "777888999"
-    ]
-  },
-  {
     "naslov": "Dervis i smrt",
     "opis": null,
     "brCitanja": 0,
@@ -81,25 +47,6 @@
     "primerci": [
       "666",
       "777"
-    ]
-  },
-  {
-    "naslov": "Kaludjer",
-    "opis": null,
-    "brCitanja": 0,
-    "listaCekanja": [],
-    "autori": [
-      {
-        "ime": "Ime1",
-        "prezime": "Prezime1"
-      },
-      {
-        "ime": "Ime2",
-        "prezime": "Prezime2"
-      }
-    ],
-    "primerci": [
-      "888"
     ]
   },
   {

@@ -20,11 +20,11 @@
             </DataGrid.Resources>
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header=" Ime naslova" Binding="{Binding naslov}" Width="120" />
-                <DataGridTextColumn Header=" Opis " Binding="{Binding opis}" Width="220" />
-                <DataGridTextColumn Header=" Broj citanja" Binding="{Binding brCitanja}" Width="150"/>
+                <DataGridTextColumn Header=" Ime naslova" Binding="{Binding naslov}" Width="100" />
+                <DataGridTextColumn Header=" Opis " Binding="{Binding opis}" Width="200" />
+                <DataGridTextColumn Header=" Broj citanja" Binding="{Binding brCitanja}" Width="100"/>
 
-                <DataGridTemplateColumn Header="" Width="150">
+                <DataGridTemplateColumn Header="" Width="120">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="Prikazi primerke" 
@@ -34,11 +34,21 @@
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
 
-                <DataGridTemplateColumn Header="" Width="*">
+                <DataGridTemplateColumn Header="" Width="120">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Button Content="Prikazi autore" 
                     Command="{Binding DataContext.PrikaziAutoreCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                    CommandParameter="{Binding}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Obrisi naslov" 
+                    Command="{Binding DataContext.ObrisiNaslovCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
                     CommandParameter="{Binding}" />
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>

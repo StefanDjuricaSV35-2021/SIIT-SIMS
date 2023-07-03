@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="IzmeniPrimerakView" Height="450" Width="800">
     <Grid Background="#FFE5E5E5">
-        <Label Content="Izmena Primerka" HorizontalAlignment="Left" Margin="292,35,0,0" VerticalAlignment="Top" Width="210" FontSize="18" FontStyle="Italic" FontWeight="Bold"/>
+        <Label Content="Izmena Primerka" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="210" FontSize="18" FontStyle="Italic" FontWeight="Bold"/>
         <Label Content="ISBN : " HorizontalAlignment="Left" Margin="86,103,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0.425,-0.384" FontStyle="Italic" FontSize="14"/>
         <Label Content="Godina : " HorizontalAlignment="Left" Margin="81,157,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="14"/>
         <Label Content="Tip koricenja : " HorizontalAlignment="Left" Margin="81,217,0,0" VerticalAlignment="Top" Width="104" FontStyle="Italic" FontSize="14"/>
@@ -19,8 +19,8 @@
         <TextBox HorizontalAlignment="Left" Margin="580,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="27" Text="{Binding NabavnaCena, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Content="Izdavac : " HorizontalAlignment="Left" Margin="470,173,0,0" VerticalAlignment="Top" Width="65" FontSize="14" FontStyle="Italic"/>
         <Label Content="Izaberite ogranak za prebacivanje : " HorizontalAlignment="Left" Margin="360,242,0,0" VerticalAlignment="Top" Width="220" FontStyle="Italic" FontSize="14"/>
-        <ComboBox HorizontalAlignment="Left" Margin="600,240,0,0" VerticalAlignment="Top" Width="145" Height="29" ItemsSource="{Binding Ogranci}" DisplayMemberPath="." SelectedItem="{Binding Ogranak}" />
-        <Button Content="Potvrdi izmenu" Command="{Binding PotvrdiIzmenuCommand}" HorizontalAlignment="Left" Margin="292,359,0,0" VerticalAlignment="Top" Width="190" Height="45" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Margin="585,240,0,0" VerticalAlignment="Top" Width="145" Height="29" ItemsSource="{Binding Ogranci}" DisplayMemberPath="." SelectedItem="{Binding Ogranak}" RenderTransformOrigin="0.414,0.657" />
+        <Button Content="Potvrdi izmenu" Command="{Binding PotvrdiIzmenuCommand}" HorizontalAlignment="Center" Margin="0,354,0,0" VerticalAlignment="Top" Width="190" Height="45" FontWeight="Bold" FontStyle="Italic" FontSize="16"/>
         <TextBlock Text="{Binding ISBN}" HorizontalAlignment="Left" Margin="143,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="117"/>
         <TextBlock HorizontalAlignment="Left" Margin="127,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="117" RenderTransformOrigin="0.5,0.5" Text="{Binding UDK}">
             <TextBlock.RenderTransform>

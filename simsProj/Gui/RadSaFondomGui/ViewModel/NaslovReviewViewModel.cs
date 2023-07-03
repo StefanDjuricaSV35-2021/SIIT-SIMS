@@ -1,6 +1,8 @@
 ﻿using Prism.Commands;
 using simsProj.Core.Admin;
+using simsProj.Core.Fond;
 using simsProj.Core.Naslov;
+using simsProj.Core.Primerak;
 using simsProj.Gui.RadSaFondomGui.View;
 using System;
 using System.Collections.Generic;
@@ -18,11 +20,14 @@ namespace simsProj.Gui.RadSaFondomGui.ViewModel
         private ObservableCollection<Naslov> naslovi;
         public ICommand PrikaziAutoreCommand { get; set; }
         public ICommand PrikaziPrimerkeCommand { get; set; }
+        public ICommand ObrisiNaslovCommand { get; set; }
         public NaslovReviewViewModel() {
 
             naslovi = new ObservableCollection<Naslov>();
             PrikaziPrimerkeCommand = new DelegateCommand(prikaziPrimerkeZaNaslov);
             PrikaziAutoreCommand = new DelegateCommand(prikaziAutoreZaNaslov);
+            ObrisiNaslovCommand = new DelegateCommand(izbrisiNaslov);
+
         }
 
         public ObservableCollection<Naslov> Naslovi
@@ -71,9 +76,17 @@ namespace simsProj.Gui.RadSaFondomGui.ViewModel
             new PrimerciReview(SelectedNaslov).Show();
         }
 
-        public bool CanExecute()
+        public void izbrisiNaslov()
         {
-            return SelectedNaslov != null;
+            MessageBoxResult rezultat = MessageBox.Show("Da li ste sigurni da želite da obrišete naslov?", "Potvrda brisanja", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+            if (rezultat == MessageBoxResult.Yes)
+            {
+                FondService.obrisiNaslov(SelectedNaslov);
+                MessageBox.Show("Naslov je uspesno obrisan!");
+                Naslovi.Remove(SelectedNaslov);
+            }
         }
+
     }
 }

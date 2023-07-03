@@ -133,5 +133,37 @@ namespace simsProj.Core.Fond
 
             return true;
         }
+
+        public static void obrisiNaslov(Naslov.Naslov naslov)
+        {
+            //prvo brisemo sve primerke ovog naslova
+            PrimerakRepository primerakRepository= new PrimerakRepository();
+            List<Primerak.Primerak> novaLista = new List<Primerak.Primerak>();
+            for( int i = 0; i < primerakRepository.Primerci.Count(); i++)
+            {
+                if (!naslov.primerci.Contains(primerakRepository.Primerci[i].isbn))
+                {
+                    novaLista.Add(primerakRepository.Primerci[i]);
+                }
+            }
+
+            primerakRepository.Primerci= novaLista;
+            primerakRepository.Save();
+
+            NaslovRepository naslovRepository= new NaslovRepository();
+            List<Naslov.Naslov> novaListaNaslova = new List<Naslov.Naslov>();
+
+            for (int i = 0; i < naslovRepository.Naslovi.Count(); i++)
+            {
+                if (naslovRepository.Naslovi[i].naslov!=naslov.naslov)
+                {
+                    novaListaNaslova.Add(naslovRepository.Naslovi[i]);
+                }
+            }
+
+            naslovRepository.Naslovi=novaListaNaslova;
+
+            naslovRepository.Save();    
+        }
 }
 }

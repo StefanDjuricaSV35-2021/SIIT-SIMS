@@ -1,16 +1,5 @@
 [
   {
-    "isbn": "111222333",
-    "godina": 2023,
-    "tipKoricenja": 0,
-    "format": "SomeFormat",
-    "udk": "SomeUdk",
-    "nabavnaCena": 100,
-    "slobodna": false,
-    "izdavac": "SomePublisher",
-    "nazivOgranka": "SomeBranchName"
-  },
-  {
     "isbn": "987654321",
     "godina": 2023,
     "tipKoricenja": 0,
@@ -74,17 +63,6 @@
     "nabavnaCena": 900,
     "slobodna": true,
     "izdavac": "Zavod",
-    "nazivOgranka": "Ogranak5"
-  },
-  {
-    "isbn": "888",
-    "godina": 1997,
-    "tipKoricenja": 0,
-    "format": "standardan",
-    "udk": "12345",
-    "nabavnaCena": 600,
-    "slobodna": true,
-    "izdavac": "Izdavac1",
     "nazivOgranka": "Ogranak5"
   },
   {
