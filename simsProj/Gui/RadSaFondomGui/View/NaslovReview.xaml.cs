@@ -1,4 +1,4 @@
-﻿using simsProj.Gui.BibliotekarGui.ViewModel;
+﻿using simsProj.Gui.RadSaFondomGui.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,20 +13,20 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace simsProj.Gui.Bibliotekar
+namespace simsProj.Gui.RadSaFondomGui.View
 {
     /// <summary>
-    /// Interaction logic for SpecijalizovanBibliotekarWindow.xaml
+    /// Interaction logic for NaslovReview.xaml
     /// </summary>
-    /// 
-    public partial class SpecijalizovanBibliotekarWindow : Window
+    public partial class NaslovReview : Window
     {
-        public SpecijalizovanBibliotekarViewModel ViewModel = new SpecijalizovanBibliotekarViewModel();
-        public SpecijalizovanBibliotekarWindow()
+        public NaslovReviewViewModel ViewModel=new NaslovReviewViewModel();
+
+        public NaslovReview()
         {
             InitializeComponent();
             DataContext = ViewModel;
+            ViewModel.fillTable();
         }
-
     }
 }

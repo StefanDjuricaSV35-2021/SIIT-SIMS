@@ -68,13 +68,13 @@
   {
     "isbn": "777",
     "godina": 2001,
-    "tipKoricenja": 1,
+    "tipKoricenja": 0,
     "format": "standardan",
     "udk": "1234",
     "nabavnaCena": 900,
     "slobodna": true,
     "izdavac": "Zavod",
-    "nazivOgranka": "Ogranak4"
+    "nazivOgranka": "Ogranak5"
   },
   {
     "isbn": "888",
@@ -85,7 +85,7 @@
     "nabavnaCena": 600,
     "slobodna": true,
     "izdavac": "Izdavac1",
-    "nazivOgranka": "Ogranak4"
+    "nazivOgranka": "Ogranak5"
   },
   {
     "isbn": "999",
@@ -97,5 +97,16 @@
     "slobodna": true,
     "izdavac": "Nepoznat",
     "nazivOgranka": "Ogranak2"
+  },
+  {
+    "isbn": "100",
+    "godina": 2000,
+    "tipKoricenja": 1,
+    "format": "qws",
+    "udk": "wqs",
+    "nabavnaCena": 1000,
+    "slobodna": true,
+    "izdavac": "w",
+    "nazivOgranka": "Ogranak1"
   }
 ]

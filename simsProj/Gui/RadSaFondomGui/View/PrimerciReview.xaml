@@ -1,0 +1,54 @@
+﻿<Window x:Class="simsProj.Gui.RadSaFondomGui.View.PrimerciReview"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:simsProj.Gui.RadSaFondomGui.View"
+        mc:Ignorable="d"
+        Title="PrimerciReview" Height="450" Width="800">
+    <Grid Background="#FFE5E5E5">
+        <DataGrid ItemsSource="{Binding Primerci}" SelectedItem="{Binding SelectedPrimerak}" Name="Primerci"  SelectionMode="Single" Margin="0,112,0,112" HorizontalAlignment="Center" Width="760" AutoGenerateColumns="False">
+
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="Background" Value="Turquoise"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                    <Setter Property="BorderThickness" Value="0,0,1,2"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Style>
+            </DataGrid.Resources>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header=" ISBN" Binding="{Binding isbn}" Width="100" />
+                <DataGridTextColumn Header=" Godina " Binding="{Binding godina}" Width="100" />
+                <DataGridTextColumn Header=" Nabavna cena" Binding="{Binding nabavnaCena}" Width="130"/>
+                <DataGridTextColumn Header=" Izdavac" Binding="{Binding izdavac}" Width="80"/>
+                <DataGridTextColumn Header=" Slobodna" Binding="{Binding slobodna}" Width="80"/>
+                <DataGridTextColumn Header=" Ogranak" Binding="{Binding nazivOgranka}" Width="80"/>
+
+                <DataGridTemplateColumn Header="" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Izmeni" 
+                    Command="{Binding DataContext.IzmeniPrimerakCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                    CommandParameter="{Binding}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="" Width="*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Izbrisi" 
+                    Command="{Binding DataContext.ObrisiPrimerakCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}"
+                    CommandParameter="{Binding}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Primerci" HorizontalAlignment="Left" Margin="367,39,0,0" VerticalAlignment="Top" Width="88" FontWeight="Bold" FontStyle="Italic" FontSize="20"/>
+
+    </Grid>
+</Window>

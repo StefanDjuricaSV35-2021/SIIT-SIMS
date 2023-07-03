@@ -91,7 +91,7 @@ namespace simsProj.Gui.RadSaFondomGui.ViewModel
             {
                 Autor a = new Autor(ImeAutora, PrezimeAutora);
                 autori.Add(a);
-                MessageBox.Show("Autor je uspesno dodat!");
+                //MessageBox.Show("Autor je uspesno dodat!");
                 ImeAutora = string.Empty;
                 PrezimeAutora = string.Empty;
             }

@@ -85,5 +85,53 @@ namespace simsProj.Core.Fond
             }
             return false;
         }
+
+        public static void obrisiPrimerak(Naslov.Naslov naslov,Primerak.Primerak p)
+        {
+            NaslovRepository naslovRepository=new NaslovRepository();
+            for( int i = 0; i < naslovRepository.Naslovi.Count; i++)
+            {
+                if (naslovRepository.Naslovi[i].naslov==naslov.naslov)
+                {
+                    naslovRepository.Naslovi[i].primerci.Remove(p.isbn);
+                    naslovRepository.Save();
+                    break;
+                }
+            }
+            PrimerakRepository primerakRepository=new PrimerakRepository();
+            primerakRepository.Primerci.Remove(p);
+            primerakRepository.Save();
+        }
+
+        public static bool izmeniPrimerak(Primerak.Primerak p,TipKoricenja tipKoricenja, string format, string nabavnaCena, string ogranak)
+        {
+            if (string.IsNullOrEmpty(format) ||  string.IsNullOrEmpty(nabavnaCena))
+            {
+                return false;
+            }
+           
+            int parsedNabavnaCena;
+
+            if (int.TryParse(nabavnaCena, out parsedNabavnaCena) == false)
+            {
+                return false;
+            }
+
+            PrimerakRepository primerakRepository = new PrimerakRepository();
+            for(int i=0;i<primerakRepository.Primerci.Count;i++)
+            {
+                if (primerakRepository.Primerci[i].isbn == p.isbn)
+                {
+                    primerakRepository.Primerci[i].tipKoricenja= tipKoricenja;
+                    primerakRepository.Primerci[i].format = format;
+                    primerakRepository.Primerci[i].nabavnaCena = parsedNabavnaCena;
+                    primerakRepository.Primerci[i].nazivOgranka = ogranak;
+                    primerakRepository.Save();
+                    break;
+                }
+            }
+
+            return true;
+        }
 }
 }
