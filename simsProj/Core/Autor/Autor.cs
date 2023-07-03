@@ -10,10 +10,10 @@ namespace simsProj.Core.Autor
     public class Autor
     {
         [JsonProperty("ime")]
-        private string ime;
+        public string ime;
 
         [JsonProperty("prezime")]
-        private string prezime;
+        public string prezime;
 
         public Autor() { }
 

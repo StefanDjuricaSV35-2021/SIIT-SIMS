@@ -1,4 +1,5 @@
-﻿using simsProj.Gui.BibliotekarGui.ViewModel;
+﻿using simsProj.Core.Primerak;
+using simsProj.Gui.RadSaFondomGui.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,20 +14,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace simsProj.Gui.Bibliotekar
+namespace simsProj.Gui.RadSaFondomGui.View
 {
     /// <summary>
-    /// Interaction logic for SpecijalizovanBibliotekarWindow.xaml
+    /// Interaction logic for IzmeniPrimerakView.xaml
     /// </summary>
-    /// 
-    public partial class SpecijalizovanBibliotekarWindow : Window
+    public partial class IzmeniPrimerakView : Window
     {
-        public SpecijalizovanBibliotekarViewModel ViewModel = new SpecijalizovanBibliotekarViewModel();
-        public SpecijalizovanBibliotekarWindow()
+        public IzmeniPrimerakViewModel ViewModel { get; set; }
+        public IzmeniPrimerakView(Primerak primerak)
         {
             InitializeComponent();
+            ViewModel = new IzmeniPrimerakViewModel(primerak);
             DataContext = ViewModel;
         }
-
     }
 }

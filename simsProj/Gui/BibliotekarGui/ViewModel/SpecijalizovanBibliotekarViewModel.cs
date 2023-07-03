@@ -15,12 +15,14 @@ namespace simsProj.Gui.BibliotekarGui.ViewModel
     {
         public ICommand RegistrujNoviNaslovIPrimerkeCommand { get; }
         public ICommand RegistrujNoviPrimerakCommand { get; }
+        public ICommand PrikazNaslovaCommand { get; }
 
 
         public SpecijalizovanBibliotekarViewModel() {
 
             RegistrujNoviNaslovIPrimerkeCommand = new DelegateCommand(registrujNaslovIPrimerke);
             RegistrujNoviPrimerakCommand = new DelegateCommand(registrujNoviPrimerak);
+            PrikazNaslovaCommand = new DelegateCommand(prikaziNaslove);
         }
 
         public void registrujNaslovIPrimerke() {
@@ -30,6 +32,11 @@ namespace simsProj.Gui.BibliotekarGui.ViewModel
         public void registrujNoviPrimerak() { 
         
             new RegistrujNoviPrimerakView().Show();
+        }
+        public void prikaziNaslove()
+        {
+
+            new NaslovReview().Show();
         }
     }
 }

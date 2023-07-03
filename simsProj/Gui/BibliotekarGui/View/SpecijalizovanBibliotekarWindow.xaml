@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:simsProj.Gui.Bibliotekar"
         mc:Ignorable="d"
-        Height="320" Width="800">
+        Height="480" Width="600">
     <Grid Background="#FFE5E5E5">
-        <Label Content="Specijalizovan bibliotekar" HorizontalAlignment="Left" Margin="302,30,0,0" VerticalAlignment="Top" Width="240" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
-        <Label Content="Rad sa fondom : " HorizontalAlignment="Left" Margin="65,95,0,0" VerticalAlignment="Top" Width="125" FontSize="14" FontStyle="Italic" FontWeight="Bold"/>
-        <Button Content="Registruj novi naslov&#xA;  i nove primerke&#xA;" Command="{Binding RegistrujNoviNaslovIPrimerkeCommand}" HorizontalAlignment="Left" Margin="302,142,0,0" VerticalAlignment="Top" Width="233" Height="50" FontSize="14"/>
-        <Button Content="Registruj novi primerak" HorizontalAlignment="Left" Margin="302,217,0,0" Command="{Binding RegistrujNoviPrimerakCommand}" VerticalAlignment="Top" Width="233" Height="37" FontSize="14"/>
+        <Label Content="Specijalizovan bibliotekar" HorizontalAlignment="Left" Margin="190,34,0,0" VerticalAlignment="Top" Width="240" FontSize="18" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Rad sa fondom : " HorizontalAlignment="Left" Margin="30,85,0,0" VerticalAlignment="Top" Width="125" FontSize="14" FontStyle="Italic" FontWeight="Bold"/>
+        <Button Content="Registruj novi naslov" Command="{Binding RegistrujNoviNaslovIPrimerkeCommand}" HorizontalAlignment="Left" Margin="169,139,0,0" VerticalAlignment="Top" Width="233" Height="45" FontSize="14" FontStyle="Italic"/>
+        <Button Content="Registruj novi primerak" HorizontalAlignment="Left" Margin="169,224,0,0" Command="{Binding RegistrujNoviPrimerakCommand}" VerticalAlignment="Top" Width="234" Height="42" FontSize="14" FontStyle="Italic"/>
+        <Button Content="Prikazi fond "  Command="{Binding PrikazNaslovaCommand}" HorizontalAlignment="Left" Margin="169,309,0,0" VerticalAlignment="Top" Width="233" Height="45" FontSize="14" FontStyle="Italic"/>
 
     </Grid>
 </Window>

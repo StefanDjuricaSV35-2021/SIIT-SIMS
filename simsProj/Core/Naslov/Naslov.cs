@@ -12,22 +12,22 @@ namespace simsProj.Core.Naslov
     public class Naslov
     {
         [JsonProperty("naslov")]
-        public string naslov;
+        public string naslov { get; set; }
 
         [JsonProperty("opis")]
-        private string opis;
+        public string opis { get; set; }
 
         [JsonProperty("brCitanja")]
-        private int brCitanja;
+        public int brCitanja { get; set; }
 
         [JsonProperty("listaCekanja")] 
-        private List<Clan.Clan> listaCekanja;
+        public List<Clan.Clan> listaCekanja { get; set; }
 
         [JsonProperty("autori")]
-        private List<Autor.Autor> autori;
+        public List<Autor.Autor> autori { get; set; }
 
         [JsonProperty("primerci")]
-        public List<string> primerci;
+        public List<string> primerci { get; set; }
 
         public Naslov()
         {
