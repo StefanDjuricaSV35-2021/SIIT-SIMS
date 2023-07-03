@@ -17,6 +17,7 @@ namespace simsProj.Gui.RegistracijaClanaGui.ViewModel
         public string Telefon { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public string TipClanstva { get; set; }
         public ICommand SubmitClanCommand { get; }
         public RegistracijaViewModel()
         {
@@ -27,6 +28,7 @@ namespace simsProj.Gui.RegistracijaClanaGui.ViewModel
             Telefon = "";
             Username = "";
             Password = "";
+            TipClanstva = "";
             SubmitClanCommand = new SubmitClanCommand(this);
         }
     }
