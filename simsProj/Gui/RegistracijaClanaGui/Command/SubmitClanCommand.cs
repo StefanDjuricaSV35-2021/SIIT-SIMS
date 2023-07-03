@@ -13,6 +13,7 @@ using System.Windows;
 namespace simsProj.Gui.RegistracijaClanaGui.Command
 {
     using Core.Korisnik;
+    using simsProj.Core.Clanska_Karta;
     using System.Security.Policy;
 
     public class SubmitClanCommand : BaseCommand
@@ -26,7 +27,7 @@ namespace simsProj.Gui.RegistracijaClanaGui.Command
         public bool CanExecute(object? parameter)
         {
             if (registracijaViewModel.Email=="" || registracijaViewModel.Ime=="" || registracijaViewModel.Username == "" || registracijaViewModel.Password == ""
-                || registracijaViewModel.Prezime=="" || registracijaViewModel.Telefon=="" || registracijaViewModel.Jmbg=="")
+                || registracijaViewModel.Prezime=="" || registracijaViewModel.Telefon=="" || registracijaViewModel.Jmbg=="" || registracijaViewModel.TipClanstva=="")
                 return false;
             if (!UniqueUsername())
                 return false;
@@ -38,12 +39,17 @@ namespace simsProj.Gui.RegistracijaClanaGui.Command
         {
             if (CanExecute(parameter))
             {
+                string brKarte = GenerateUniqueBrClanskeKarte();
                 KorisnickiNalog korisnickiNalog = new KorisnickiNalog(registracijaViewModel.Username, registracijaViewModel.Password);
                 Clan clan = new Clan(registracijaViewModel.Email, registracijaViewModel.Ime, registracijaViewModel.Prezime, registracijaViewModel.Jmbg,
-                    registracijaViewModel.Telefon,korisnickiNalog, GenerateUniqueBrClanskeKarte());
+                    registracijaViewModel.Telefon,korisnickiNalog, brKarte);
                 ClanRepository clanRepository = new ClanRepository();
                 clanRepository.Clanovi.Add(clan);
                 clanRepository.Save();
+                ClanskaKartaRepository clanskaKartaRepository = new ClanskaKartaRepository();
+                ClanskaKarta clanskaKarta = new ClanskaKarta(brKarte,(TipClanstva)Enum.Parse(typeof(TipClanstva),registracijaViewModel.TipClanstva), DateTime.Now);
+                clanskaKartaRepository.ClanskeKarte.Add(clanskaKarta);
+                clanskaKartaRepository.Save();
                 MessageBox.Show("Novi clan je kreiran!");
             }
             else

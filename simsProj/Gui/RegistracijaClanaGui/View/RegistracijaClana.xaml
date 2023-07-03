@@ -21,7 +21,9 @@
         <TextBox x:Name="telefonText" HorizontalAlignment="Left" Height="34" Margin="156,0,0,0" TextWrapping="Wrap" Text="{Binding Telefon,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Width="140" FontSize="14"/>
         <TextBox x:Name="usernameText" HorizontalAlignment="Left" Height="34" Margin="539,30,0,0" TextWrapping="Wrap" Text="{Binding Username,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="137" FontSize="14"/>
         <TextBox x:Name="passwordText" HorizontalAlignment="Left" Height="34" Margin="539,92,0,0" TextWrapping="Wrap" Text="{Binding Password,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="137" FontSize="14"/>
-        <Button Content="Submit" Command="{Binding SubmitClanCommand}" HorizontalAlignment="Left" Height="51" Margin="433,208,0,0" VerticalAlignment="Top" Width="147" FontWeight="Bold" FontSize="16" Background="#FF05F9F4"/>
+        <Button Content="Submit" Command="{Binding SubmitClanCommand}" HorizontalAlignment="Left" Height="51" Margin="433,259,0,0" VerticalAlignment="Top" Width="147" FontWeight="Bold" FontSize="16" Background="#FF05F9F4"/>
+        <Label Content="Tip clanstva:" HorizontalAlignment="Left" Height="43" Margin="433,156,0,0" VerticalAlignment="Top" Width="92" FontWeight="Bold" FontSize="14"/>
+        <ComboBox x:Name="comboBoxClanstvo" HorizontalAlignment="Left" Height="35" Margin="539,156,0,0" Text="{Binding TipClanstva,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="137"/>
 
 
     </Grid>

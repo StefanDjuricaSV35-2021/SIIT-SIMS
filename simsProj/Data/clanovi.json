@@ -24,15 +24,15 @@
     "broj clanske karte": "124"
   },
   {
-    "email": "a",
-    "ime": "a",
-    "prezime": "a",
-    "jmbg": "12333",
+    "email": "test",
+    "ime": "test",
+    "prezime": "test",
+    "jmbg": "1234",
     "telefon": "12345",
     "korisnicki nalog": {
-      "username": "luka123",
-      "password": "pass123"
+      "username": "test1234",
+      "password": "1234"
     },
-    "broj clanske karte": "266"
+    "broj clanske karte": "144"
   }
 ]

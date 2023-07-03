@@ -24,6 +24,11 @@ namespace simsProj.Gui.RegistracijaClanaGui.View
         {
             InitializeComponent();
             DataContext = new RegistracijaViewModel();
+            comboBoxClanstvo.Items.Add("DECA");
+            comboBoxClanstvo.Items.Add("ODRASLI");
+            comboBoxClanstvo.Items.Add("STUDENTI");
+            comboBoxClanstvo.Items.Add("PENZIONERI");
+            comboBoxClanstvo.Items.Refresh();
         }
     }
 }
