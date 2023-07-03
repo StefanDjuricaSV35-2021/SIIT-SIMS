@@ -8,7 +8,7 @@
     "nabavnaCena": 100,
     "slobodna": false,
     "izdavac": "SomePublisher",
-    "nazivOgranka": "SomeBranchName"
+    "nazivOgranka": "Ogranak1"
   },
   {
     "isbn": "456123789",
@@ -19,7 +19,7 @@
     "nabavnaCena": 100,
     "slobodna": false,
     "izdavac": "SomePublisher",
-    "nazivOgranka": "SomeBranchName"
+    "nazivOgranka": "Ogranak2"
   },
   {
     "isbn": "123",
@@ -30,7 +30,7 @@
     "nabavnaCena": 50,
     "slobodna": false,
     "izdavac": "Izdavac A",
-    "nazivOgranka": "Ogranak A"
+    "nazivOgranka": "Ogranak3"
   },
   {
     "isbn": "124",
@@ -41,7 +41,7 @@
     "nabavnaCena": 70,
     "slobodna": false,
     "izdavac": "Izdavac B",
-    "nazivOgranka": "Ogranak B"
+    "nazivOgranka": "Ogranak4"
   },
   {
     "isbn": "666",
@@ -52,7 +52,7 @@
     "nabavnaCena": 1300,
     "slobodna": true,
     "izdavac": "Klett",
-    "nazivOgranka": "Ogranak1"
+    "nazivOgranka": "Ogranak5"
   },
   {
     "isbn": "777",
