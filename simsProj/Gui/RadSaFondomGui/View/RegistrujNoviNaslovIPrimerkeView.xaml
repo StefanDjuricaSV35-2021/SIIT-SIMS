@@ -1,0 +1,24 @@
+﻿<Window x:Class="simsProj.Gui.RadSaFondomGui.View.RegistrujNoviNaslovIPrimerke"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:simsProj.Gui.RadSaFondomGui.View"
+        mc:Ignorable="d"
+        Title="RegistrujNoviNaslovIPrimerke" Height="550" Width="500">
+    <Grid Background="#FFE5E5E5">
+        <Label Content="Podaci o naslovu  " HorizontalAlignment="Left" Margin="175,23,0,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" FontStyle="Italic" FontSize="16" RenderTransformOrigin="-0.468,0.141"/>
+        <Label Content="Ime naslova : " HorizontalAlignment="Left" Margin="55,83,0,0" VerticalAlignment="Top" FontStyle="Italic" FontSize="14" />
+        <TextBox HorizontalAlignment="Left" Margin="146,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="26" RenderTransformOrigin="0.333,-1.114" Text="{Binding ImeNaslova, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Content="Opis : " HorizontalAlignment="Left" Margin="86,133,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.842,0.772" Width="47" FontStyle="Italic" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="138,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="55" Text="{Binding Opis, UpdateSourceTrigger=PropertyChanged}" />
+        <Label Content="Autori : " HorizontalAlignment="Left" Margin="64,213,0,0" VerticalAlignment="Top" Width="69" FontStyle="Italic" FontSize="16"/>
+        <Label Content="Ime : " HorizontalAlignment="Left" Margin="89,260,0,0" VerticalAlignment="Top" Width="41" FontStyle="Italic" FontSize="14"/>
+        <Label Content="Prezime : " HorizontalAlignment="Left" Margin="64,298,0,0" VerticalAlignment="Top" FontStyle="Italic" Height="34" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Margin="135,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.625,-0.109" Height="26" Text="{Binding ImeAutora, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox HorizontalAlignment="Left" Margin="138,302,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.625,-0.109" Height="26" Text="{Binding PrezimeAutora, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Content="Dodaj autora" Command="{Binding DodajAutoraCommand}" HorizontalAlignment="Left" Margin="305,281,0,0" VerticalAlignment="Top" Width="115" FontStyle="Italic" FontSize="14"/>
+        <Button Content="Registruj naslov" Command="{Binding RegistrujNaslovCommand}" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" Width="194" FontStyle="Italic" FontWeight="Bold" FontSize="16" Height="50"/>
+        <Button Content="Dodaj primerke" Command="{Binding DodajPrimerkeCommand}" HorizontalAlignment="Center" Margin="0,449,0,0" VerticalAlignment="Top" Width="144" FontWeight="Bold" FontStyle="Italic" FontSize="16" Height="35"/>
+    </Grid>
+</Window>

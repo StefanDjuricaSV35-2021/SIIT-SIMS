@@ -1,0 +1,112 @@
+[
+  {
+    "isbn": "987654321",
+    "godina": 2023,
+    "tipKoricenja": 0,
+    "format": "SomeFormat",
+    "udk": "SomeUdk",
+    "nabavnaCena": 100,
+    "slobodna": false,
+    "izdavac": "SomePublisher",
+    "nazivOgranka": "Ogranak1"
+  },
+  {
+    "isbn": "456123789",
+    "godina": 2023,
+    "tipKoricenja": 0,
+    "format": "SomeFormat",
+    "udk": "SomeUdk",
+    "nabavnaCena": 100,
+    "slobodna": false,
+    "izdavac": "SomePublisher",
+    "nazivOgranka": "Ogranak2"
+  },
+  {
+    "isbn": "123",
+    "godina": 2021,
+    "tipKoricenja": 0,
+    "format": "A4",
+    "udk": "ABC123",
+    "nabavnaCena": 50,
+    "slobodna": false,
+    "izdavac": "Izdavac A",
+    "nazivOgranka": "Ogranak3"
+  },
+  {
+    "isbn": "124",
+    "godina": 2022,
+    "tipKoricenja": 1,
+    "format": "A5",
+    "udk": "XYZ789",
+    "nabavnaCena": 70,
+    "slobodna": false,
+    "izdavac": "Izdavac B",
+    "nazivOgranka": "Ogranak4"
+  },
+  {
+    "isbn": "666",
+    "godina": 2000,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "123",
+    "nabavnaCena": 1300,
+    "slobodna": true,
+    "izdavac": "Klett",
+    "nazivOgranka": "Ogranak5"
+  },
+  {
+    "isbn": "777",
+    "godina": 2001,
+    "tipKoricenja": 0,
+    "format": "standardan",
+    "udk": "1234",
+    "nabavnaCena": 900,
+    "slobodna": true,
+    "izdavac": "Zavod",
+    "nazivOgranka": "Ogranak5"
+  },
+  {
+    "isbn": "999",
+    "godina": 1998,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "1234",
+    "nabavnaCena": 750,
+    "slobodna": true,
+    "izdavac": "Nepoznat",
+    "nazivOgranka": "Ogranak2"
+  },
+  {
+    "isbn": "100",
+    "godina": 2000,
+    "tipKoricenja": 1,
+    "format": "qws",
+    "udk": "wqs",
+    "nabavnaCena": 1000,
+    "slobodna": true,
+    "izdavac": "w",
+    "nazivOgranka": "Ogranak1"
+  },
+  {
+    "isbn": "1002",
+    "godina": 1998,
+    "tipKoricenja": 1,
+    "format": "standardan",
+    "udk": "2001",
+    "nabavnaCena": 850,
+    "slobodna": true,
+    "izdavac": "Zavod",
+    "nazivOgranka": "Ogranak5"
+  },
+  {
+    "isbn": "1003",
+    "godina": 2005,
+    "tipKoricenja": 0,
+    "format": "standardan",
+    "udk": "3001",
+    "nabavnaCena": 1200,
+    "slobodna": true,
+    "izdavac": "Klett",
+    "nazivOgranka": "Ogranak2"
+  }
+]

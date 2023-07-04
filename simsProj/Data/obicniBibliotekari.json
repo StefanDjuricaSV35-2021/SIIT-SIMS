@@ -1,0 +1,14 @@
+[
+  {
+    "naziv ogranka": "ogranak1",
+    "email": "emailobicnog",
+    "ime": "stefan",
+    "prezime": "djuricoglu",
+    "jmbg": "123",
+    "telefon": "065555555",
+    "korisnicki nalog": {
+      "username": "stefan123",
+      "password": "123"
+    }
+  }
+]

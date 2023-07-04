@@ -1,0 +1,85 @@
+[
+  {
+    "naslov": "Naslov 1",
+    "opis": "Opis 1",
+    "brCitanja": 3,
+    "listaCekanja": [
+      {
+        "email": "emailclana",
+        "ime": "luka",
+        "prezime": "petkovic",
+        "jmbg": "12345",
+        "telefon": "021123",
+        "korisnicki nalog": {
+          "username": "lukap",
+          "password": "lukaa"
+        },
+        "broj clanske karte": "123"
+      }
+    ],
+    "autori": [
+      {
+        "ime": "Autor 1",
+        "prezime": "Prezime 1"
+      },
+      {
+        "ime": "Autor 2",
+        "prezime": "Prezime 2"
+      }
+    ],
+    "primerci": [
+      "123456789",
+      "987654321",
+      "456123789"
+    ]
+  },
+  {
+    "naslov": "Dervis i smrt",
+    "opis": null,
+    "brCitanja": 1,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Mesa",
+        "prezime": "Selimovic"
+      }
+    ],
+    "primerci": [
+      "666",
+      "777"
+    ]
+  },
+  {
+    "naslov": "Novi naslov",
+    "opis": "nema opisa",
+    "brCitanja": 2,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Ime3",
+        "prezime": "Prezime3"
+      },
+      {
+        "ime": "Ime4",
+        "prezime": "Prezime4"
+      }
+    ],
+    "primerci": []
+  },
+  {
+    "naslov": "Na Drini Cuprija",
+    "opis": "U svom vekovnom postojanju most je pretrpeo mnogo toga. Prvo zabeleženo oštećenje mosta bilo je rušenje jednog svoda u srednjem veku.",
+    "brCitanja": 0,
+    "listaCekanja": [],
+    "autori": [
+      {
+        "ime": "Ivo",
+        "prezime": "Andric"
+      }
+    ],
+    "primerci": [
+      "1002",
+      "1003"
+    ]
+  }
+]

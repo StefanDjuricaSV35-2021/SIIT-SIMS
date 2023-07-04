@@ -1,0 +1,23 @@
+[
+  {
+    "jmbg": "123456",
+    "datum kazne": "2023-07-02T13:27:27.8182343+02:00",
+    "iznos": 1700,
+    "placena": false,
+    "id kazne": "9092"
+  },
+  {
+    "jmbg": "123456",
+    "datum kazne": "2023-07-02T13:41:57.8370705+02:00",
+    "iznos": 1700,
+    "placena": false,
+    "id kazne": "2408"
+  },
+  {
+    "jmbg": "123456",
+    "datum kazne": "2023-07-02T13:43:10.5837194+02:00",
+    "iznos": 3400,
+    "placena": false,
+    "id kazne": "8727"
+  }
+]

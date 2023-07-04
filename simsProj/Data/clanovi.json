@@ -1,0 +1,26 @@
+[
+  {
+    "email": "emailclana",
+    "ime": "luka",
+    "prezime": "petkovic",
+    "jmbg": "12345",
+    "telefon": "021123",
+    "korisnicki nalog": {
+      "username": "lukap",
+      "password": "lukaa"
+    },
+    "broj clanske karte": "123"
+  },
+  {
+    "email": "vesnica@gmail.com",
+    "ime": "vesna",
+    "prezime": "vesna",
+    "jmbg": "123456",
+    "telefon": "0211234",
+    "korisnicki nalog": {
+      "username": "vesna",
+      "password": "vesna"
+    },
+    "broj clanske karte": "124"
+  }
+]
