@@ -19,6 +19,8 @@ namespace simsProj.Gui.BibliotekarGui.View
     /// </summary>
     using Gui.RegistracijaClanaGui.View;
     using simsProj.Core.Clan;
+    using simsProj.Core.Clanska_Karta;
+
     public partial class ObicanBibliotekarWindow : Window
     {
         public ObicanBibliotekarWindow()
@@ -45,10 +47,15 @@ namespace simsProj.Gui.BibliotekarGui.View
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             ClanRepository clanRepository = new ClanRepository();
+            ClanskaKartaRepository clanskaKartaRepository = new ClanskaKartaRepository();
             if (listBoxClanovi.SelectedItem != null)
             {
                 string selected = listBoxClanovi.SelectedItem.ToString().Split(" ")[4];
                 Clan selectedClan = clanRepository.FindClanByUsername(selected);
+
+                ClanskaKarta clanskaKarta = clanskaKartaRepository.GetClanskaKartaByBr(selectedClan.brClanskeKarte);
+                clanskaKartaRepository.ClanskeKarte.Remove(clanskaKarta);
+                clanskaKartaRepository.Save();
 
                 clanRepository.Clanovi.Remove(selectedClan);
                 clanRepository.Save();
