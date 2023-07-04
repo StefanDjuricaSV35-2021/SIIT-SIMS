@@ -36,7 +36,7 @@
   {
     "naslov": "Dervis i smrt",
     "opis": null,
-    "brCitanja": 0,
+    "brCitanja": 1,
     "listaCekanja": [],
     "autori": [
       {
@@ -52,7 +52,7 @@
   {
     "naslov": "Novi naslov",
     "opis": "nema opisa",
-    "brCitanja": 0,
+    "brCitanja": 2,
     "listaCekanja": [],
     "autori": [
       {

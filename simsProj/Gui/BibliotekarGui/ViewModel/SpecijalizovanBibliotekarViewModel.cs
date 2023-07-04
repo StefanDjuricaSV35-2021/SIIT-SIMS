@@ -17,12 +17,15 @@ namespace simsProj.Gui.BibliotekarGui.ViewModel
         public ICommand RegistrujNoviPrimerakCommand { get; }
         public ICommand PrikazNaslovaCommand { get; }
 
+        public ICommand IzvestajCommand { get; }
+
 
         public SpecijalizovanBibliotekarViewModel() {
 
             RegistrujNoviNaslovIPrimerkeCommand = new DelegateCommand(registrujNaslovIPrimerke);
             RegistrujNoviPrimerakCommand = new DelegateCommand(registrujNoviPrimerak);
             PrikazNaslovaCommand = new DelegateCommand(prikaziNaslove);
+            IzvestajCommand = new DelegateCommand(prikaziIzvestaj);
         }
 
         public void registrujNaslovIPrimerke() {
@@ -37,6 +40,10 @@ namespace simsProj.Gui.BibliotekarGui.ViewModel
         {
 
             new NaslovReview().Show();
+        }
+        public void prikaziIzvestaj()
+        {
+            new IzvestajView().Show();
         }
     }
 }
