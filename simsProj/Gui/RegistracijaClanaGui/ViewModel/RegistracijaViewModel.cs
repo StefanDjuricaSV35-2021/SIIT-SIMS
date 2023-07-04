@@ -8,6 +8,8 @@ using System.Windows.Input;
 namespace simsProj.Gui.RegistracijaClanaGui.ViewModel
 {
     using Gui.RegistracijaClanaGui.Command;
+    using simsProj.Gui.RegistracijaClanaGui.View;
+
     public class RegistracijaViewModel : BaseViewModel
     {
         public string Email { get; set; }
@@ -29,6 +31,7 @@ namespace simsProj.Gui.RegistracijaClanaGui.ViewModel
             Username = "";
             Password = "";
             TipClanstva = "";
+            
             SubmitClanCommand = new SubmitClanCommand(this);
         }
     }

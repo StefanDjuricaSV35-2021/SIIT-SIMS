@@ -21,7 +21,15 @@ namespace simsProj.Core.Clanska_Karta
         {
             ClanskeKarte = JsonConvert.DeserializeObject<List<ClanskaKarta>>(File.ReadAllText(FilePath));
         }
-
+        public ClanskaKarta? GetClanskaKartaByBr(string brKarte)
+        {
+            foreach(ClanskaKarta clanskaKarta in ClanskeKarte)
+            {
+                if (clanskaKarta.brClanskeKarte == brKarte)
+                    return clanskaKarta;
+            }
+            return null;
+        }
         public void Save()
         {
             File.WriteAllText(FilePath, JsonConvert.SerializeObject(ClanskeKarte, Formatting.Indented));

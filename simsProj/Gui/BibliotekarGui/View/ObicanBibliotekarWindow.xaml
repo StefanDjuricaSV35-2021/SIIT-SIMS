@@ -9,6 +9,11 @@
     <Grid Background="#FFE5E5E5">
         <Label Content="Obican bibliotekar" HorizontalAlignment="Left" Height="47" Margin="246,44,0,0" VerticalAlignment="Top" Width="242" FontWeight="Bold" FontSize="18"/>
         <Button Content="Registracija novog clana" HorizontalAlignment="Left" Height="52" Margin="87,135,0,0" VerticalAlignment="Top" Width="169" FontWeight="Bold" FontSize="14" Click="RegistracijaClana_Click"/>
+        <Label Content="Spisak clanova" HorizontalAlignment="Left" Height="38" Margin="400,105,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="14"/>
+        <ListBox x:Name="listBoxClanovi" HorizontalAlignment="Left" Height="167" Margin="400,161,0,0" VerticalAlignment="Top" Width="300" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="14"/>
+        <Button Content="Obrisi clana" HorizontalAlignment="Left" Height="44" Margin="400,359,0,0" VerticalAlignment="Top" Width="150" Background="#FFFD0404" FontWeight="Bold" FontSize="14" Click="Delete_Click"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Height="38" Margin="568,105,0,0" VerticalAlignment="Top" Width="101" FontWeight="Bold" FontSize="14" Click="Refresh_Click"/>
+        <Button Content="Izmeni clana" HorizontalAlignment="Left" Height="44" Margin="595,359,0,0" VerticalAlignment="Top" Width="119" Background="#FF0BF92F" FontWeight="Bold" FontSize="14" Click="Edit_Click"/>
 
     </Grid>
 </Window>
