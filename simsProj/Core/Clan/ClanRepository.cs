@@ -24,5 +24,16 @@ namespace simsProj.Core.Clan
         {
             File.WriteAllText(FilePath, JsonConvert.SerializeObject(Clanovi, Formatting.Indented));
         }
+        public Clan? FindClanByUsername(string username)
+        {
+            foreach(Clan clan in Clanovi)
+            {
+                if (clan.nalog.username == username)
+                {
+                    return clan;
+                }
+            }
+            return null;
+        }
     }
 }

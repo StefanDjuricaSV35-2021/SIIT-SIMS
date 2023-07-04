@@ -22,17 +22,5 @@
       "password": "vesna"
     },
     "broj clanske karte": "124"
-  },
-  {
-    "email": "test",
-    "ime": "test",
-    "prezime": "test",
-    "jmbg": "1234",
-    "telefon": "12345",
-    "korisnicki nalog": {
-      "username": "test1234",
-      "password": "1234"
-    },
-    "broj clanske karte": "144"
   }
 ]
